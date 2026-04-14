@@ -48,7 +48,6 @@ packages/
   history/          per-user undo/redo manager
   protocol/         client/server message types
   shared/           canonical document, command, and operation types
-agents/             role notes and project guidance
 tools/              local helper scripts
 ```
 
