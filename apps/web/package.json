@@ -1,0 +1,23 @@
+{
+  "name": "apps-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "typecheck": "tsc --project tsconfig.json"
+  },
+  "dependencies": {
+    "@figma-3d/3d-core": "file:../../packages/3d-core",
+    "@figma-3d/collab": "file:../../packages/collab",
+    "@figma-3d/history": "file:../../packages/history",
+    "@figma-3d/protocol": "file:../../packages/protocol",
+    "@figma-3d/shared": "file:../../packages/shared",
+    "@react-three/drei": "^9.120.5",
+    "@react-three/fiber": "^8.17.14",
+    "next": "14.2.32",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "three": "^0.176.0"
+  }
+}

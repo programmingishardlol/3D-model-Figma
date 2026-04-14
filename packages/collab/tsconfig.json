@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Bundler"
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": [
+    "src/apply-operations.ts",
+    "src/apply-operations.test.ts",
+    "src/room-store.ts",
+    "src/room-store.test.ts"
+  ]
+}

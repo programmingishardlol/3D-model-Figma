@@ -1,0 +1,23 @@
+{
+  "name": "designer-collab-cad",
+  "private": true,
+  "packageManager": "npm@10.8.2",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev -w apps/web",
+    "dev:server": "npm run dev -w apps/server",
+    "dev": "concurrently \"npm run dev:web\" \"npm run dev:server\"",
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "tsx --test packages/collab/src/apply-operations.test.ts packages/collab/src/room-store.test.ts packages/history/src/history.test.ts apps/web/lib/pending-submissions.test.ts apps/web/lib/socket-session.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "concurrently": "^9.1.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.8.3"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "apps-server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc --project tsconfig.json",
+    "typecheck": "tsc --project tsconfig.json"
+  },
+  "dependencies": {
+    "@figma-3d/3d-core": "file:../../packages/3d-core",
+    "@figma-3d/collab": "file:../../packages/collab",
+    "@figma-3d/protocol": "file:../../packages/protocol",
+    "@figma-3d/shared": "file:../../packages/shared",
+    "ws": "^8.18.1"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.5.14"
+  }
+}
